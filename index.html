@@ -149,8 +149,31 @@
 
     /* ---------- HERO ---------- */
     header {
-      padding: 110px 0 80px;
+      padding: 88px 0 80px;
       position: relative;
+    }
+
+    .avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #06140b;
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 26px;
+      box-shadow: 0 0 0 6px var(--accent-soft);
+    }
+
+    .hero-role {
+      font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-top: 4px;
+      margin-bottom: 22px;
     }
 
     .hero-badge {
@@ -537,7 +560,7 @@
 
   <nav>
     <div class="nav-inner">
-      <a href="#" class="logo">Olcay<span>.</span></a>
+      <a href="#" class="logo">Olcay Özdemir<span>.</span></a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#work">Work</a>
@@ -551,7 +574,8 @@
   <header>
     <div class="wrap">
       <div class="hero-badge"><span class="dot"></span> Available for new opportunities</div>
-      <h1>Senior Frontend<br>Developer building<br><span class="accent">scalable</span> interfaces.</h1>
+      <h1>Olcay <span class="accent">Özdemir</span></h1>
+      <p class="hero-role">Senior Frontend Developer</p>
       <p class="hero-sub">7+ years crafting production-grade web applications with React &amp; TypeScript across
         international teams in Singapore and Istanbul.</p>
       <div class="hero-cta">
