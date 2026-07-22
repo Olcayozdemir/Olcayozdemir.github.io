@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Olcay Özdemir — Senior Frontend Developer</title>
   <meta name="description"
-    content="Senior Frontend Developer with 7+ years building scalable web applications with React & TypeScript. Based in Istanbul." />
+    content="Senior Frontend Developer with 7+ years building scalable web applications with React, TypeScript and Next.js. Based in Istanbul, open to remote and relocation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -331,6 +331,29 @@
     }
 
     /* ---------- PROJECTS ---------- */
+    .group-label {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 52px 0 -4px;
+      color: var(--text-faint);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .group-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .group-label:first-child {
+      margin-top: 44px;
+    }
+
     .projects {
       display: grid;
       gap: 22px;
@@ -576,10 +599,11 @@
       <div class="hero-badge"><span class="dot"></span> Available for new opportunities</div>
       <h1>Olcay <span class="accent">Özdemir</span></h1>
       <p class="hero-role">Senior Frontend Developer</p>
-      <p class="hero-sub">7+ years crafting production-grade web applications with React &amp; TypeScript across
-        international teams in Singapore and Istanbul.</p>
+      <p class="hero-sub">7+ years crafting production-grade web applications with React, TypeScript and Next.js
+        across international teams in Singapore and Istanbul.</p>
       <div class="hero-cta">
         <a href="#work" class="btn btn-primary">View my work →</a>
+        <a href="Olcay_Ozdemir_CV.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download CV</a>
         <a href="mailto:olcay.ozdemir@outlook.com" class="btn btn-ghost">Get in touch</a>
       </div>
     </div>
@@ -590,8 +614,10 @@
       <div class="sec-label">About</div>
       <h2 class="sec-title">Frontend engineer focused on UI architecture &amp; design systems.</h2>
       <p class="lead">I build scalable, component-driven interfaces with a strong focus on reusability, performance, and
-        developer experience. I enjoy introducing new technologies to improve team workflows and mentoring other
-        developers along the way. Currently building real-time gaming experiences at Livegames.</p>
+        developer experience. I work closely with product and design teams to turn requirements into maintainable
+        systems, and I enjoy introducing new technologies and mentoring other developers along the way. Currently
+        building real-time gaming experiences at Livegames — and shipping full products, client apps and admin
+        panels alike, as a freelancer on the side.</p>
       <div class="stats">
         <div class="stat">
           <div class="num">7+</div>
@@ -615,6 +641,7 @@
         <div class="sec-label">Selected Work</div>
         <h2 class="sec-title">Things I've built.</h2>
       </div>
+      <div class="group-label reveal">Product &amp; platform roles</div>
       <div class="projects">
 
         <a href="https://livegames.io" target="_blank" rel="noopener" class="project reveal">
@@ -626,8 +653,9 @@
             <span class="link-ico">↗</span>
           </div>
           <p>Real-time gaming platform. Designed and built a reusable UI component library that now powers 10+ shipped
-            games (and counting), enabling faster, more consistent development across the team. Manage complex
-            client-side state with MobX &amp; RxJS.</p>
+            games (and counting), enabling faster, more consistent development across the team. I own key technical
+            deliverables end to end, drive engineering best practices, and manage complex client-side state with
+            MobX &amp; RxJS.</p>
           <div class="tags">
             <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">MobX</span><span
               class="tag">RxJS</span><span class="tag">Styled Components</span><span class="tag">Storybook</span>
@@ -686,6 +714,59 @@
         </a>
 
       </div>
+
+      <div class="group-label reveal">Freelance &amp; side projects</div>
+      <div class="projects">
+
+        <a href="https://doctrinavera.com" target="_blank" rel="noopener" class="project reveal">
+          <div class="project-top">
+            <div>
+              <h3>Doctrina Vera</h3>
+              <div class="role">Freelance · Full frontend, both sides of the product</div>
+            </div>
+            <span class="link-ico">↗</span>
+          </div>
+          <p>Medical education platform for TUS exam prep. I built the student portal with Next.js 16, React 19 and TypeScript — a block-based structured lesson content system, multi-language support and Google OAuth — plus a separate content management panel where the team authors and publishes that content, built with React, Vite, Tailwind CSS 4 and Radix UI. Both consume the same REST API.</p>
+          <div class="tags"><span class="tag">Next.js 16</span><span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">TanStack Query</span><span class="tag">Tailwind CSS</span><span class="tag">Radix UI</span><span class="tag">TipTap</span><span class="tag">Zustand</span><span class="tag">i18n</span></div>
+        </a>
+
+        <a href="https://foremostmotion.com" target="_blank" rel="noopener" class="project reveal">
+          <div class="project-top">
+            <div>
+              <h3>Foremost Motion</h3>
+              <div class="role">Freelance · Corporate site &amp; tools</div>
+            </div>
+            <span class="link-ico">↗</span>
+          </div>
+          <p>Industrial automation company site: an 11-group product catalog, 10 sector solution pages, a step-by-step package configurator that turns a spec into a quote request, a calculation centre with engineering tools and 3D simulations, a download centre and a blog — fully bilingual in Turkish and English.</p>
+          <div class="tags"><span class="tag">Responsive Design</span><span class="tag">i18n</span><span class="tag">Performance</span><span class="tag">SEO</span></div>
+        </a>
+
+        <a href="https://minada.vercel.app" target="_blank" rel="noopener" class="project reveal">
+          <div class="project-top">
+            <div>
+              <h3>Minada Enerji</h3>
+              <div class="role">Freelance · Site, CMS &amp; simulator</div>
+            </div>
+            <span class="link-ico">↗</span>
+          </div>
+          <p>Solar energy company website with a savings simulator that models payback for a given system, plus a blog CMS so the team can publish without touching code. Built with Next.js and TypeScript, deployed on Vercel.</p>
+          <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Vercel</span><span class="tag">i18n</span></div>
+        </a>
+
+        <div class="project reveal">
+          <div class="project-top">
+            <div>
+              <h3>Hayze</h3>
+              <div class="role">Side project · In progress</div>
+            </div>
+            
+          </div>
+          <p>My own studio site and design playground — a dark, grainy, fog-and-sodium-light aesthetic built with Next.js 15 (App Router) and React Three Fiber, bilingual in English and Turkish. Where I try ideas that are too opinionated for client work.</p>
+          <div class="tags"><span class="tag">Next.js 15</span><span class="tag">React Three Fiber</span><span class="tag">TypeScript</span><span class="tag">WebGL</span></div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -704,16 +785,19 @@
         <div class="skill-cat reveal">
           <h4>Frameworks &amp; Libraries</h4>
           <div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span
-              class="chip">Vue.js</span><span class="chip">Web Components</span></div>
+              class="chip">Vue.js</span><span class="chip">Web Components</span><span
+              class="chip">i18n (next-intl)</span></div>
         </div>
         <div class="skill-cat reveal">
           <h4>State Management</h4>
           <div class="chips"><span class="chip">Redux Toolkit</span><span class="chip">Zustand</span><span
-              class="chip">MobX</span><span class="chip">React Query</span><span class="chip">RxJS</span></div>
+              class="chip">MobX</span><span class="chip">TanStack Query</span><span
+              class="chip">RxJS</span></div>
         </div>
         <div class="skill-cat reveal">
           <h4>Styling &amp; UI</h4>
-          <div class="chips"><span class="chip">Styled Components</span><span class="chip">SCSS</span><span
+          <div class="chips"><span class="chip">Styled Components</span><span class="chip">Tailwind CSS</span><span
+              class="chip">Radix UI</span><span class="chip">SCSS</span><span
               class="chip">Storybook</span><span class="chip">Design Systems</span></div>
         </div>
         <div class="skill-cat reveal">
@@ -722,9 +806,10 @@
               class="chip">BrowserStack</span><span class="chip">Datadog</span><span class="chip">Sentry</span></div>
         </div>
         <div class="skill-cat reveal">
-          <h4>CI/CD &amp; Tools</h4>
+          <h4>CI/CD, Cloud &amp; Tools</h4>
           <div class="chips"><span class="chip">Jenkins</span><span class="chip">AWS</span><span
-              class="chip">Git</span><span class="chip">GraphQL</span><span class="chip">REST APIs</span></div>
+              class="chip">Vite</span><span class="chip">Git</span><span class="chip">GraphQL</span><span
+              class="chip">REST APIs</span></div>
         </div>
       </div>
     </div>
@@ -734,7 +819,7 @@
     <div class="wrap">
       <div class="contact-box reveal">
         <h2>Let's build something.</h2>
-        <p>I'm open to senior frontend roles and interesting collaborations. The fastest way to reach me is below.</p>
+        <p>I'm open to senior and lead frontend roles — remote, or relocating. Based in Istanbul. The fastest way to reach me is below.</p>
         <div class="socials">
           <a href="mailto:olcay.ozdemir@outlook.com" class="social">✉️ Email</a>
           <a href="https://github.com/Olcayozdemir" target="_blank" rel="noopener" class="social">⌨ GitHub</a>
